@@ -1,4 +1,4 @@
-# GitHub Actions Enterprises
+# GitHub Actions Exercises
 This repository exists to provide users of GitHub Actions with very simple and easy-to-follow examples, breaking down more about how Actions works, along with nuances of working with the different features included.
 
 ## Exercise Prerequisites
