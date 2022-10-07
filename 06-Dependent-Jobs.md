@@ -6,7 +6,7 @@ This exercise will walk you through creating a chained set of jobs the depend on
 
 ## Step 1: Create separate parrellel jobs
 
-1. From the `main` branch of your repository, create a new branch of code called `feature/dependent`
+1. From the __default__ branch of your repository, create a new branch of code called `feature/dependent`
 2. Create a new file named `.github/workflows/dependent.yaml`
 3. Copy the contents below to the newly created file:
 

@@ -5,7 +5,7 @@ The following exercise will walk you through using actions (these can be from a 
 
 ## Step 1: Create a new workflow file
 
-1. From the `main` branch of your repository, create a new branch of code called `feature/using-actions`
+1. From the __default__ branch of your repository, create a new branch of code called `feature/using-actions`
 2. Create a new file named `.github/workflows/using-actions.yaml`
 3. Copy the contents below to the newly created file:
 
@@ -117,10 +117,10 @@ jobs:
 
 The result will be an issue created in your repository.
 
-## Step 4: Merge the branch into main for later use
+## Step 4: Merge the pull request into the __default__ branch for later use
 
-In the previous steps, we implemented public actions, but specifically used an out-of-date version. We want this to be put into the main branch so we can see it in a later step.
+In the previous steps, we implemented public actions, but specifically used an out-of-date version. We want this to be put into the __default__ branch so we can see it in a later step.
 
 1. Go to your repository and navigate to the "Pull Requests" tab
-2. Create a new pull request to merge `feature/using-actions` into `main` (or whatever your default branch is)
+2. Create a new pull request to merge `feature/using-actions` into your __default__ branch
 3. Merge the pull request created.

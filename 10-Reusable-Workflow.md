@@ -4,6 +4,9 @@ In the previous exercise [09-Manual-Workflow.md](./09-Manual-Workflow.md), you c
 
 In this exercise, we will modify that same workflow to be called by other workflows. This model can be used with public or internal repository workflows in order to create a centralized set of workflows. This can reduce workflow configuration across your organization, saving time and effort.
 
+## Note
+In any examples below, replace `main` with your __default__ branch name:
+
 ## Step 1: Modify the manual workflow and add in changes
 
 1. Checkout the __default__ branch of your repository

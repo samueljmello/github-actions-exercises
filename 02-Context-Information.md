@@ -4,9 +4,12 @@ Every workflow execution has access to context information during run time. This
 
 Additionally, you will learn how to use environment variables within a step.
 
+## Note
+In all the examples below, replace `main` with your __default__ branch name:
+
 ## Step 1: Create a new workflow to see different contexts
 
-1. From the `main` branch of your repository, create a new branch of code called `feature/context`
+1. From the __default__ branch of your repository, create a new branch of code called `feature/context`
 2. Create a new file named `.github/workflows/context.yaml`
 3. Copy the contents below to the newly created file:
 

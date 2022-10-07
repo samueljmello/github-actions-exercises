@@ -6,7 +6,7 @@ The below example walks you through using a matrix strategy to execute jobs on d
 
 ## Step 1: Create a matrix workflow to scale across runners
 
-1. From the `main` branch of your repository, create a new branch of code called `feature/matrix`
+1. From the __default__ branch of your repository, create a new branch of code called `feature/matrix`
 2. Create a new file named `.github/workflows/matrix.yaml`
 3. Copy the contents below to the newly created file:
 

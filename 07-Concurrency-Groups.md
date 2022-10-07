@@ -4,7 +4,7 @@ By default, all workflows operate with some level of concurrency defined. Concur
 
 ## Step 1: Create two workflows listening for the same events with concurrency defined
 
-1. From the `main` branch of your repository, create a new branch of code called `feature/concurrency`
+1. From the __default__ branch of your repository, create a new branch of code called `feature/concurrency`
 2. Create a new file named `.github/workflows/concurrency.yaml`
 3. Copy the contents below to the newly created file:
 

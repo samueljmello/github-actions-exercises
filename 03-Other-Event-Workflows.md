@@ -6,7 +6,7 @@ See [event trigger documentation](https://docs.github.com/en/actions/using-workf
 
 ## Step 1: Create an issue-triggered workflow
 
-1. From the `main` branch of your repository, create a new branch of code called `feature/issue-workflow`
+1. From the __default__ branch of your repository, create a new branch of code called `feature/issue-workflow`
 2. Create a new file named `.github/workflows/issue-workflow.yaml`
 3. Copy the contents below to the newly created file:
 
@@ -30,14 +30,14 @@ jobs:
 4. Add & commit your changes, then publish your branch.
 5. Go to your repository, and create an issue.
 
-The result will be that __nothing happens__ because this event requires the workflow to be defined in the default branch. In our case, we must push this to main.
+The result will be that __nothing happens__ because this event requires the workflow to be defined in the default branch. In our case, we must push this to __default__ branch.
 
 ## Step 2: Update the workflow to be in the default branch
 
-6. Open a pull request to merge `feature/issue-workflow` into `main`.
+6. Open a pull request to merge `feature/issue-workflow` into your default branch.
 7. Merge the pull request and delete the branch
 8. Go to your repository, and create an issue.
 
 The result will be an execution of the Issue Event Workflow that outputs "The action 'opened' was performed against 'issues'".
 
-9. Checkout to main on your local repository and pull down the changes.
+9. Checkout to the __default__ branch on your local repository and pull down the changes.
