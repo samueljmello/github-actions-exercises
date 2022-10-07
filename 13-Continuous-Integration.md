@@ -24,6 +24,8 @@ jobs:
     steps:
       - name: Clone
         uses: actions/checkout@v3.1.0
+      - name: Get Dependencies
+        run: go get app
       - name: Build
         run: go build
       - name: Run Linting
@@ -53,16 +55,10 @@ Branch protection is one of the feature GitHub has that allows you to control wh
 Now that the **default** branch is protected, we will add some "bad" code that will fail our linting. This will give us an example of how required status checks will prevent us from making mistakes.
 
 1. From the **default** branch of your repository, create a new branch of code called `feature/bad`
-2. Modify the file `golang_app/main.go` and **add** the following to the bottom of the file:
+2. Replace the contents of the file [golang_app/main.go](./golang_app/main.go) with the contents in [./golang_replacements/13-unnused-func.go](./golang_replacements/13-unnused-func.go)
 
-```go
-func badFunc() {
-  fmt.Println("I'm not going to get used.")
-}
-```
-
-4. Add & commit your changes, then push your branch.
-5. Go to your repository, click the `Pull Requests` tab, and open a pull request to merge `feature/bad` to your **default** branch.
+3. Add & commit your changes, then push your branch.
+4. Go to your repository, click the `Pull Requests` tab, and open a pull request to merge `feature/bad` to your **default** branch.
 
 The result will be the inability to merge (the button will be disabled) because the status check for `Build, Lint, & Test` will fail the `Lint` step. This is how you ensure developer accountability and a quality of code.
 
@@ -70,5 +66,5 @@ The result will be the inability to merge (the button will be disabled) because 
 
 Checks that are required have the `Required` badge next to them. Further checks _could_ be added to include static code analysis and more.
 
-6. Close the PR (do not merge)
-7. Delete the `feature/bad` branch
+5. Close the PR (do not merge)
+6. Delete the `feature/bad` branch
