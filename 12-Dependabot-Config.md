@@ -5,6 +5,9 @@ To see this in action, we previously used a public action (actions/checkout@v2) 
 
 An extensive list of supported dependency ecosystems can be found in the documentation section.
 
+## Prerequisite Exercises
+- [11-Using-Actions.md](./11-Using-Actions.md)
+
 ## Step 1: Add dependabot config
 
 1. Checkout the __default__ branch of your repository
