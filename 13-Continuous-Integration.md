@@ -1,7 +1,7 @@
 # Continuous Integration
 A common pattern for continuous integration involves using pull requests to trigger testing & other automation tasks.
 
-In the exercise below, we will walk through adding linting & testing for pull requests for a sample Golang application.
+In the exercise below, we will walk through adding linting & testing for pull requests for a sample Golang application. This will trigger on pull request creation, as well as updates to code in the branch that the PR references.
 
 ## Step 1: Create a workflow that triggers on pull request creation
 1. Checkout the __default__ branch of your repository
