@@ -69,3 +69,6 @@ The result will be the inability to merge (the button will be disabled) because 
 ![the status checks failing](images/12-status-checks.png)
 
 Checks that are required have the `Required` badge next to them. Further checks _could_ be added to include static code analysis and more.
+
+6. Close the PR (do not merge)
+7. Delete the `feature/bad` branch
