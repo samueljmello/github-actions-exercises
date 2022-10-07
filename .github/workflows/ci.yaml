@@ -1,0 +1,14 @@
+name: Continuous Integration
+on:
+  pull_request:
+    branches: main
+  workflow_dispatch:
+jobs:
+  build-and-test:
+    name: Build, Lint, & Test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clone
+        uses: actions/checkout@v3.1.0
+      - name: Lint
+        uses: actions/super-linter@v4.9.7
