@@ -22,6 +22,7 @@ This repository exists to provide users of GitHub Actions with very simple and e
 - Add & commit: `git add <path-to-file>; git commit -m "<your message>"` (replace with file and message)
 - Publish a branch: `git push --set-upstream origin <branch>` (replace with branch name)
 - Clone a repository: `git clone <repository-url>` (replace with repository URL)
+- Checkout to a branch: `git checkout <branch-name>` (replace with branch name)
 
 ## Outline
 1. [Basic workflow creation](./01-Basic-Workflows.md)
