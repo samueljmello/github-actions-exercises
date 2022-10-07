@@ -31,6 +31,8 @@ jobs:
     steps:
       - name: Clone
         uses: actions/checkout@v3.1.0
+      - name: Get Dependencies
+        run: go get app
       - name: Build
         run: go build
       - name: Run Linting
@@ -62,3 +64,8 @@ The result will be an artifact that authenticated users can download. Additional
 It should be noted that artifact retention is only as long [configured](https://docs.github.com/en/organizations/managing-organization-settings/configuring-the-retention-period-for-github-actions-artifacts-and-logs-in-your-organization) for your enterprise or organization.
 
 ![artifacts on build dashboard](./images/14-artifacts.png)
+
+## Step 2: Merge the changes to your default branch and update your local repository
+
+1. Click the green `Merge pull request` button on the pull request from step 1.6. This will put your code into the main branch.
+2. Checkout to your default branch locally and pull down the changes.
