@@ -4,8 +4,8 @@ on:
     branches: main
   workflow_dispatch:
 jobs:
-  build-and-test:
-    name: Build, Lint, & Test
+  lint:
+    name: Lint
     runs-on: ubuntu-latest
     steps:
       - name: Clone
