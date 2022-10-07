@@ -15,7 +15,7 @@ The following exercise will walk you through creating a manually triggered workf
 
 ## Step 1: Create a new workflow to be triggered manually
 
-1. Checkout the __default__ branch of your repository
+1. Checkout the **default** branch of your repository
 2. Create a new file named `.github/workflows/manual.yaml`
 3. Copy the contents below to the newly created file:
 

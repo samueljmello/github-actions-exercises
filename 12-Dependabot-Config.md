@@ -10,7 +10,7 @@ An extensive list of supported dependency ecosystems can be found in the documen
 
 ## Step 1: Add dependabot config
 
-1. Checkout the __default__ branch of your repository
+1. Checkout the **default** branch of your repository
 2. Create a new file named `.github/dependabot.yaml`
 3. Copy the contents below to the newly created file:
 

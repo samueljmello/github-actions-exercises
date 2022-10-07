@@ -11,14 +11,14 @@ In this exercise, you will see how to control at both the top-level (for all job
 |Windows, Linux|pwsh|Windows|
 |Windows, Linux|python|
 |Windows, Linux|bash|Linux|
-|Linux, MacOS|sh|MacOS|
+|Linux, macOS|sh|macOS|
 |Windows|cmd|
 |Windows|PowerShell|
 
 
 ## Step 1: Manually assign shell & working directory to different steps
 
-1. From the __default__ branch of your repository, create a new branch of code called `feature/defaults`
+1. From the **default** branch of your repository, create a new branch of code called `feature/defaults`
 2. Create a new file named `.github/workflows/defaults.yaml`
 3. Copy the contents below to the newly created file:
 

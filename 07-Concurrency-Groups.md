@@ -4,7 +4,7 @@ By default, all workflows operate with some level of concurrency defined. Concur
 
 ## Step 1: Create two workflows listening for the same events with concurrency defined
 
-1. From the __default__ branch of your repository, create a new branch of code called `feature/concurrency`
+1. From the **default** branch of your repository, create a new branch of code called `feature/concurrency`
 2. Create a new file named `.github/workflows/concurrency.yaml`
 3. Copy the contents below to the newly created file:
 
@@ -46,7 +46,9 @@ jobs:
 6. Add & commit your changes, then publish your branch.
 7. Go to your repository, and view the Actions tab to see the execution against your published branch.
 
-The result will be an execution of the workflow whenever any changes are pushed to the `feature/concurrency` branch, but the second workflow (whichever one is picked up second) will wait for the first to complete before allowing execution. This isn't a real-world use scenario, but it demonstrates to apply concurrency across workflows. Additional executions of a workflow due to additional events being sent already act this way (read: multiple commits pushed up), but if you need to also apply it across other workflows, this is how you accomplish that.
+The result will be an execution of the workflow whenever any changes are pushed to the `feature/concurrency` branch, but the second workflow (whichever one is picked up second) will wait for the first to complete before allowing execution.
+
+This isn't a real-world use scenario, but it demonstrates to apply concurrency across workflows. Additional executions of a workflow due to additional events being sent already act this way (read: multiple commits pushed up), but if you need to also apply it across other workflows, this is how you accomplish that.
 
 ## Step 2: Add cancellation to workflows
 
@@ -90,4 +92,4 @@ jobs:
 
 3. Add & commit your changes, then push to GitHub.
 
-The result will be that one workflow execution (whichever is triggered first) will cancel when the second is queued because they are in the same concurrency group. 
+The result will be that one workflow execution (whichever is triggered first) will cancel when the second is queued because they are in the same concurrency group.

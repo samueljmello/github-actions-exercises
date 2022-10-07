@@ -11,7 +11,7 @@ The exercise below will walk you through updating the previously created `Contin
 - [13-Continuous-Integration](./13-Continuous-Integration.md)
 
 ## Step 1: Add the artifact save action
-1. From the __default__ branch of your repository, create a new branch of code called `feature/artifacts`
+1. From the **default** branch of your repository, create a new branch of code called `feature/artifacts`
 2. Open the file named `.github/workflows/ci.yaml`
 3. Replace the contents of the file with:
 
@@ -48,7 +48,7 @@ jobs:
 
 4. Add & commit your changes, then publish your branch.
 5. Go to your repository, and view the Pull Requests tab.
-6. Create a pull request to merge `feature/artifacts` into your __default__ branch.
+6. Create a pull request to merge `feature/artifacts` into your **default** branch.
 7. Click the `Show All Checks` link on the status checks in your pull request, then click the `Details` link next to `Continuous Integration`.
 
 ![status checks successful](./images/14-status-checks.png)

@@ -6,7 +6,7 @@ This exercise will walk you through the usage of that.
 
 ## Step 1: See global environment variables in action
 
-1. From the __default__ branch of your repository, create a new branch of code called `feature/global-env`
+1. From the **default** branch of your repository, create a new branch of code called `feature/global-env`
 2. Create a new file named `.github/workflows/global-env.yaml`
 3. Copy the contents below to the newly created file:
 

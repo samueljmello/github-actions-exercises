@@ -8,7 +8,7 @@ Removing a workflow from your repository does not remove it's history either. Lo
 
 ## Step 1: Create a basic workflow
 
-1. From the __default__ branch of your repository, create a new branch of code called `feature/basic-workflow`
+1. From the **default** branch of your repository, create a new branch of code called `feature/basic-workflow`
 2. Create a new file named `.github/workflows/basic-workflow.yaml`
 3. Copy the contents below to the newly created file:
 
@@ -57,14 +57,14 @@ jobs:
 
 2. Add & commit your changes, then push the updates.
 3. Go back to the Actions tab and see the failed execution.
-4. Check out to your __default__ branch, but leave the `feature/basic-workflow` branch.
+4. Check out to your **default** branch, but leave the `feature/basic-workflow` branch.
 
 The results will be a "failed" execution.
 
 ## Step 3: Open a PR to merge your code
 
 1. Go to the pull requests tab in your GitHub repository.
-2. Open a pull request to merge `feature/basic-workflow` to your __default__ branch.
+2. Open a pull request to merge `feature/basic-workflow` to your **default** branch.
 3. Review the status checks area right above the merge option.
 
 The result will be that the pull request shows the details of status checks above the merge option.

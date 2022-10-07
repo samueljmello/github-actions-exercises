@@ -1,15 +1,15 @@
 # Context Information
 
-Every workflow execution has access to context information during run time. This exercise will show you how to access the different contexts available, and what they mean.
+Every workflow execution has access to context information during runtime. This exercise will show you how to access the different contexts available, and what they mean.
 
 Additionally, you will learn how to use environment variables within a step.
 
 ## Note
-In all the examples below, replace `main` with your __default__ branch name:
+In all the examples below, replace `main` with your **default** branch name:
 
 ## Step 1: Create a new workflow to see different contexts
 
-1. From the __default__ branch of your repository, create a new branch of code called `feature/context`
+1. From the **default** branch of your repository, create a new branch of code called `feature/context`
 2. Create a new file named `.github/workflows/context.yaml`
 3. Copy the contents below to the newly created file:
 
@@ -73,7 +73,7 @@ jobs:
 
 The result will be that `steps` is still empty.
 
-## Step 3: Update the workflow with an `id` for the step.
+## Step 3: Update the workflow with an `id` for the step
 
 1. Follow the same process as step 2, but use this content:
 
@@ -98,7 +98,7 @@ jobs:
 
 The result will be that the `steps` context now has the data from the previous step.
 
-## Step 3: Update the workflow with an `id` for the step.
+## Step 4: Add a second output variable
 
 1. Follow the same process as step 3, but use this content:
 

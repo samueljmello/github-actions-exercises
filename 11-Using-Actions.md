@@ -5,7 +5,7 @@ The following exercise will walk you through using actions (these can be from a 
 
 ## Step 1: Create a new workflow file
 
-1. From the __default__ branch of your repository, create a new branch of code called `feature/using-actions`
+1. From the **default** branch of your repository, create a new branch of code called `feature/using-actions`
 2. Create a new file named `.github/workflows/using-actions.yaml`
 3. Copy the contents below to the newly created file:
 
@@ -32,7 +32,7 @@ In previous examples, we were running commands in the runner, but the runner (by
 4. Add & commit your changes, then publish your branch.
 5. Go to your repository, and view the Actions tab to see the execution against your published branch.
 
-The result will be an execution that lists the contents of an empty directory, clones the repo down, and then lists the contents again (this time, with files).
+The result will be an execution that lists the contents of an empty directory, clones the repository down, and then lists the contents again (this time, with files).
 
 Similarly to reusable workflows, the syntax for an action is `<owner>/<repo>@<release-tag>`
 
@@ -40,7 +40,7 @@ Similarly to reusable workflows, the syntax for an action is `<owner>/<repo>@<re
 
 When using an action, you may be required to give various inputs. This is unique to each action. To see a list of inputs, simply visit `https://github.com/<owner>/<repo>`, and look at the source of the `action.yml` file.
 
-For example: https://github.com/actions/checkout/blob/main/action.yml
+For example: `https://github.com/actions/checkout/blob/main/action.yml`
 
 The `inputs` property defines all possible inputs and whether they are required.
 
@@ -70,13 +70,13 @@ jobs:
 4. Add & commit your changes, then push them up.
 5. Go to your repository, and view the Actions tab to see the execution.
 
-The result will be the same as before, but this time we've added the `clean` input to perform some additional clean tasks when cloning the repo (defined in the documentation)
+The result will be the same as before, but this time we've added the `clean` input to perform some additional clean tasks when cloning the repository (defined in the documentation)
 
 ## Step 3: Using `script-actions` to write quick actions for interaction with the GitHub API
 
 These exercises don't cover creating your own actions, but for the sake of understanding some of the underlying process and getting a bit more familiar with inputs, we will attempt to use the popular action `actions/github-script`.
 
-This utilizes Node.JS and [OctoKit](https://github.com/octokit) to execute the script you pass to it, much like you would in creating your own Action with Node.JS. This simplifies the process by taking care of instantiating OctoKit and any additional set-up work involved.
+This utilizes Node.js and [OctoKit](https://github.com/octokit) to execute the script you pass to it, much like you would in creating your own Action with Node.js. This simplifies the process by taking care of instantiating OctoKit and any additional set-up work involved.
 
 1. Modify the workflow file you just created: `.github/workflows/using-actions.yaml`
 2. Replace the contents with:
@@ -117,10 +117,10 @@ jobs:
 
 The result will be an issue created in your repository.
 
-## Step 4: Merge the pull request into the __default__ branch for later use
+## Step 4: Merge the pull request into the **default** branch for later use
 
-In the previous steps, we implemented public actions, but specifically used an out-of-date version. We want this to be put into the __default__ branch so we can see it in a later step.
+In the previous steps, we implemented public actions, but specifically used an out-of-date version. We want this to be put into the **default** branch so we can see it in a later step.
 
 1. Go to your repository and navigate to the "Pull Requests" tab
-2. Create a new pull request to merge `feature/using-actions` into your __default__ branch
+2. Create a new pull request to merge `feature/using-actions` into your **default** branch
 3. Merge the pull request created.

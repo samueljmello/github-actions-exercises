@@ -5,11 +5,11 @@ In the previous exercise [09-Manual-Workflow.md](./09-Manual-Workflow.md), you c
 In this exercise, we will modify that same workflow to be called by other workflows. This model can be used with public or internal repository workflows in order to create a centralized set of workflows. This can reduce workflow configuration across your organization, saving time and effort.
 
 ## Note
-In any examples below, replace `main` with your __default__ branch name:
+In any examples below, replace `main` with your **default** branch name:
 
 ## Step 1: Modify the manual workflow and add in changes
 
-1. Checkout the __default__ branch of your repository
+1. Checkout the **default** branch of your repository
 2. Open the file named `.github/workflows/manual.yaml` (if you don't have this file, follow the instructions in [09-Manual-Workflow.md](./09-Manual-Workflow.md))
 3. Replace the contents of the file with:
 
@@ -62,7 +62,7 @@ The result will be a button a workflow that is still manually executable
 
 ## Step 2: Add a new workflow that uses the `Manual & Shared` workflow
 
-1. Checkout the __default__ branch of your repository
+1. Checkout the **default** branch of your repository
 2. Create a new file named `.github/workflows/shared.yaml`
 3. Replace the contents of the file with:
 
@@ -84,6 +84,6 @@ jobs:
 The result will be an execution of the workflow `Manual & Shared Workflow`, that will output the values passed to it from the `with` option.
 
 ## Notes
-- When using a shared workflow from a **public** or **internal** repo, the syntax will be slightly different:
+- When using a shared workflow from a **public** or **internal** repository, the syntax will be slightly different:
 `<owner>/<repo>/<path-to-workflow>@<release-tag>`
-- Workflows shared from an **internal** repo must have the appropriate repository settings (see [instructions here](https://docs.github.com/en/enterprise-cloud@latest/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-github-actions-settings-for-a-repository#allowing-access-to-components-in-an-internal-repository))
+- Workflows shared from an **internal** repository must have the appropriate repository settings (see [instructions here](https://docs.github.com/en/enterprise-cloud@latest/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-github-actions-settings-for-a-repository#allowing-access-to-components-in-an-internal-repository))
