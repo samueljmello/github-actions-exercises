@@ -18,3 +18,4 @@ jobs:
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
           VALIDATE_GO: false
+          VALIDATE_ALL_CODEBASE: false
