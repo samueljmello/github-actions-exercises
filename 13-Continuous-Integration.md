@@ -5,22 +5,24 @@ In the exercise below, we will walk through adding linting & testing for pull re
 
 ## Step 1: Create a workflow that triggers on pull request creation
 1. Checkout the **default** branch of your repository
-2. Create a new file named `.github/workflows/ci.yaml`
+2. Create a new file named `.github/workflows/ci-cd.yaml`
 3. Copy the contents below to the newly created file:
 
 ```yaml
-name: Continuous Integration
+name: Continuous Integration & Delivery
 on:
   pull_request:
   workflow_dispatch:
 defaults:
   run:
     shell: bash
-    working-directory: golang_app
 jobs:
-  build-and-test:
-    name: Build, Lint, & Test
+  ci:
+    name: Continuous Integration
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: golang_app
     steps:
       - name: Clone
         uses: actions/checkout@v3.1.0

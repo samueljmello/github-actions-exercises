@@ -33,13 +33,13 @@ This repository exists to provide users of GitHub Actions with very simple and e
 9. [Manual workflows](09-Manual-Workflow.md)
 10. [Reusable workflows](./10-Reusable-Workflow.md)
 11. [Using public actions](./11-Using-Actions.md)
-12. [Continuous integration](./12-Continuous-Integration.md)
+12. [Continuous Integration](./12-Continuous-Integration.md)
 13. [Dependabot config](./13-Dependabot-Config.md)
 14. [Artifacts](./14-Artifacts.md)
 15. [Caching](./15-Caching.md)
-16. [Packages](./16-Packages.md)
-17. Using releases to trigger workflows (under construction)
-18. Environments (under construction)
+16. [Packages & Continuous Delivery](./16-Packages-And-Continuous-Delivery.md)
+17. [Environments & Continuous Deployment](./17-Environments-And-Continuous-Deployment.md)
+18. Releases & Tags
 
 ---
 
