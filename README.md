@@ -10,11 +10,12 @@ This repository exists to provide users of GitHub Actions with very simple and e
 - A source code editor ([VSCode](https://code.visualstudio.com/download), etc.)
 
 ### Environment
-1. A GitHub repository with admin permissions
-2. Authentication to the repository (OAUTH credentials or PAT token)
-3. The repository cloned locally, then the [remote updated](https://docs.github.com/en/get-started/getting-started-with-git/managing-remote-repositories#changing-a-remote-repositorys-url) to your repository from step #1.
+1. An empty (unitialized) GitHub repository that you have admin access to.
+2. Authentication to GitHub (OAUTH credentials or PAT token)
+3. The repository cloned locally, then the [remote updated](https://docs.github.com/en/get-started/getting-started-with-git/managing-remote-repositories#changing-a-remote-repositorys-url) to your repository from step 1.
 
 ### Knowledge
+- [How to create a repository on GitHub](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-new-repository)
 - [How to clone a GitHub repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)
 - [How to add, commit, and push changes to a GitHub repository](https://github.com/git-guides/git-commit)
 - [How to create & publish a branch](https://github.com/git-guides/git-push)
@@ -43,22 +44,10 @@ This repository exists to provide users of GitHub Actions with very simple and e
 
 ---
 
-## Vocabulary
-Below is a quick reference to some of the vocabulary of GitHub Actions
-
-|Term|Description|
-|---|---|
-|GitHub Actions|The entire product suite that surrounds workflows, actions, etc.|
-|Workflow|A set of jobs to be executed on specific events.|
-|Job|A group of steps in a job.|
-|Steps|The smallest part of a workflow (often referred to as an action), contains command-line code, public action references, or shared workflow references.|
-|Action|Can be synonimous with step, but typically refers to reusable actions developed internally or externally, that your steps can reference and use.|
-|Runner|The virtual machine, physical machine, or container that workflows execute on.|
-
----
-
 ## Files In This Repository
+- `./docker_image` contains files pertaining to the Docker image creation in the Continuous Delivery exercise.
 - `./golang_app` contains all files pertaining to the Golang application we will build in the Continuous Integration exercise.
+- `./golang_replacments` contains files pertaining to the Golang application modification in several exercises.
 - `./images` contains any images placed in the exercise Markdown (`./md`) files.
 - `./.gitignore` simply ignores specific files that should not exist in the repository.
 - `./<##>-<Exercise-Name>.md` are the exercises written in Markdown and can be viewed through the GitHub repository, or opened in a code editor.
