@@ -96,3 +96,8 @@ The result will be the same as before (`Continuous Integration & Delivery` execu
 2. You will see a yellow banner with a `Review deployments` button. Click that, check the box for the environment (`production`) and then click `Approve and deploy`.
 
 The result will be the `Continuous Delivery` workflow fully executing, the same as before.
+
+## Step 4: View the environments GUI
+1. Navigate to the `Code` tab on your repository
+2. On the right side, the `Environments` section will now have `production` listed, with it's current status.
+3. Click the `production` environment to see the history.
