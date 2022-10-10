@@ -1,5 +1,9 @@
 # GitHub Actions Exercises
-This repository exists to provide users of GitHub Actions with very simple and easy-to-follow examples, breaking down more about how Actions works, along with nuances of working with the different features included.
+Have you ever wanted to use GitHub Actions, but aren't really sure where to start? Then this repo is for you! In the [Outline](#outline) below, you will find a list of exercises to perform that will increase your knowledge of Actions with practical application and real-world examples. Most exercises can be performed alone, but a few build on each-other and say so in the prerequisites for the exercise. You will also learn about GitHub features that tie-in to Actions and see how to use them first-hand.
+
+Don't see an exercise you were hoping to find? Open an `issue` on this repo to suggest it.
+
+This work is entirely open source and comes with no support or guarantee, especially as GitHub features change over time.
 
 ---
 
@@ -40,7 +44,8 @@ This repository exists to provide users of GitHub Actions with very simple and e
 15. [Caching](./15-Caching.md)
 16. [Packages & continuous celivery](./16-Packages-And-Continuous-Delivery.md)
 17. [Environments & continuous deployment](./17-Environments-And-Continuous-Deployment.md)
-18. Releases & Tags
+18. Releases & Tags (under construction)
+19. Creating Your Own Actions (under construction)
 
 ---
 
