@@ -1,33 +1,31 @@
 # Artifacts
-Artifacts can simply be described as some kind of output from a build process. This could be a binary, supporting files, or pretty much anything generated during build-time.
+GitHub offers built-in artifact functionality for saving and reusing artifacts across jobs. These artifacts can simply be described as some kind of output from a build process. This could be a binary, supporting files, or pretty much anything you want to pass from one job to the next.
 
-These "artifacts" could eventually be used as the running application itself (deployed to a host), and play a pivotal part in a Continuous Delivery model.
-
-GitHub offers built-in artifact functionality for saving and reusing artifacts in different workflows or jobs.
-
-The exercise below will walk you through updating the previously created `Continuous Integration` workflow (see [13-Continuous-Integration](./13-Continuous-Integration.md)) with the artifact action that will handle saving the artifact created from our `Golang` build process.
+The exercise below will walk you through updating the previously created `Continuous Integration` workflow (see [13-Continuous-Integration](./13-Continuous-Integration.md)) with the artifact action that will handle saving the artifact created from our `Golang` build process. We will later use this to continuously deliver a Docker image with our artifact (see [16-Packages](./16-Packages.md)).
 
 ## Prerequisite Exercises
 - [13-Continuous-Integration](./13-Continuous-Integration.md)
 
 ## Step 1: Add the artifact save action
 1. From the **default** branch of your repository, create a new branch of code called `feature/artifacts`
-2. Open the file named `.github/workflows/ci.yaml`
+2. Open the file named `.github/workflows/ci-cd.yaml`
 3. Replace the contents of the file with:
 
 ```yaml
-name: Continuous Integration
+name: Continuous Integration & Delivery
 on:
   pull_request:
   workflow_dispatch:
 defaults:
   run:
     shell: bash
-    working-directory: golang_app
 jobs:
-  build-and-test:
-    name: Build, Lint, & Test
+  ci:
+    name: Continuous Integration
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: golang_app
     steps:
       - name: Clone
         uses: actions/checkout@v3.1.0
