@@ -5,4 +5,4 @@ An additional way to trigger workflows is through releases or tags. Both are val
 
 In the following exercise, we will start by seeing how releases work, then add tag events as well.
 
-## Step 1: 
+## Step 1: Add a release event to the existing continuous deployment pipeline
