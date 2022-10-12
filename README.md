@@ -42,9 +42,9 @@ This work is entirely open source and comes with no support or guarantee, especi
 13. [Continuous integration](./12-Continuous-Integration.md)
 14. [Artifacts](./14-Artifacts.md)
 15. [Caching](./15-Caching.md)
-16. [Packages & continuous celivery](./16-Packages-And-Continuous-Delivery.md)
+16. [Packages & continuous delivery](./16-Packages-And-Continuous-Delivery.md)
 17. [Environments & continuous deployment](./17-Environments-And-Continuous-Deployment.md)
-18. Releases & Tags (under construction)
+18. [Releases & Tags](./18-Releases-And-Tags.md)
 19. Creating Your Own Actions (under construction)
 
 ---
