@@ -16,7 +16,10 @@ This work is entirely open source and comes with no support or guarantee, especi
 ### Environment
 1. An empty (unitialized) GitHub repository that you have admin access to.
 2. Authentication to GitHub (OAUTH credentials or PAT token)
-3. The repository cloned locally, then the [remote updated](https://docs.github.com/en/get-started/getting-started-with-git/managing-remote-repositories#changing-a-remote-repositorys-url) to your repository from step 1.
+3. Set-Up:
+   1. This repository cloned locally
+   2. Remove the `./github/workflows/ci.yaml` file.
+   3. Update the remote to your repository URL from step 1. See [instructions](https://docs.github.com/en/get-started/getting-started-with-git/managing-remote-repositories#changing-a-remote-repositorys-url) for adding a remote.
 
 ### Knowledge
 - [How to create a repository on GitHub](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-new-repository)
@@ -26,7 +29,9 @@ This work is entirely open source and comes with no support or guarantee, especi
 
 ---
 
-## Outline
+## Outline & Where To Start
+Below are exercises to help you in your Actions journey. They build on each other, so walking through incrementally is ideal.
+
 1. [Basic workflow creation](./01-Basic-Workflows.md)
 2. [Context information & Environment Variables](./02-Context-Information.md)
 3. [Other event workflow creation](./03-Other-Event-Workflows.md)
