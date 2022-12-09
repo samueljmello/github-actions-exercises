@@ -34,6 +34,7 @@ The result will be an execution of the workflow whenever any changes are pushed 
 In this example, the `run` property is used to execute a simple CLI command. In our case, we are using Linux (ubuntu) and therefore are writing bash commands.
 
 ## Step 2: Update the workflow to be failing
+We will now intentionally update a workflow to make it fail so that we can simulate what you would expect to see if somethin went wrong.
 
 1. Update the workflow file you created with the contents below:
 
@@ -62,6 +63,7 @@ jobs:
 The results will be a "failed" execution.
 
 ## Step 3: Open a PR to merge your code
+Additionally, we will see the failed results in a corresponding pull request. This is, again, to simulate a failing scenario and how it might affect your team.
 
 1. Go to the pull requests tab in your GitHub repository.
 2. Open a pull request to merge `feature/basic-workflow` to your **default** branch.
@@ -70,3 +72,7 @@ The results will be a "failed" execution.
 The result will be that the pull request shows the details of status checks above the merge option.
 
 Additionally, you've seen how to run multiple commands in one `run` value using the `|` character (pipe).
+
+## Step 4: Clean Up
+1. Delete the PR created in [Step 3](#step-3-open-a-pr-to-merge-your-code)
+2. Delete the published branch created in [Step 1](#step-1-create-a-basic-workflow)
