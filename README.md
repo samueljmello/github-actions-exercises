@@ -33,7 +33,7 @@ This work is entirely open source and comes with no support or guarantee, especi
 Below are exercises to help you in your Actions journey. They build on each other, so walking through incrementally is ideal.
 
 1. [Basic workflow creation](./01-Basic-Workflows.md)
-2. [Context information & Environment Variables](./02-Context-Information.md)
+2. [Understanding Context Variables](./02-Understanding-Context-Variables.md)
 3. [Other event workflow creation](./03-Other-Event-Workflows.md)
 4. [Global environment variables across jobs](./04-Global-Environment-Variables.md)
 5. [Workflow defaults](./05-Workflow-Defaults.md)
