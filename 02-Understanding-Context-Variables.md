@@ -44,7 +44,7 @@ jobs:
 4. Add & commit your changes, then publish your branch.
 5. Go to your repository, and view the Actions tab to see the execution against your published branch.
 
-The result will be an execution of the workflow whenever any changes are pushed EXCEPT on the `main` branch. Context information for `github` and `job` are viewable in the output.
+The result will be an execution of the workflow whenever any changes are pushed EXCEPT on the `main` branch. Context information is viewable in the output so that you can understand how to utilize those values in your workflows.
 
 ## Step 2: Update the workflow to with step output
 Previously, we saw all the data available in the various context objects, but the `steps` context variable was empty. Here, we will learn how to populate the `steps` context variable, so we can pass data to subsequent steps. We will also purposely ommit a setting required to complete this step as it can be a common mistake.
