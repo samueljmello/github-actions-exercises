@@ -124,3 +124,4 @@ In the previous steps, we implemented public actions, but specifically used an o
 1. Go to your repository and navigate to the "Pull Requests" tab
 2. Create a new pull request to merge `feature/using-actions` into your **default** branch
 3. Merge the pull request created.
+4. Delete the published branch created in [Step 1](#step-1-create-a-new-workflow-file)
