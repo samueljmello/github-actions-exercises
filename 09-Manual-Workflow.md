@@ -14,6 +14,7 @@ There are a couple of requirements in order for this to be enabled on a workflow
 The following exercise will walk you through creating a manually triggered workflow, and then have you perform a manual execution through the GitHub GUI.
 
 ## Step 1: Create a new workflow to be triggered manually
+The only step in this exercise is to add the workflow to your default branch directly.
 
 1. Checkout the **default** branch of your repository
 2. Create a new file named `.github/workflows/manual.yaml`
@@ -62,3 +63,6 @@ The result will be a button (when viewing your workflow) you can use to execute 
 ![A picture of the button](images/09-manual-run-button.png)
 
 The result will be an execution of the workflow above.
+
+## Step 3: Clean Up
+No further steps are needed as you committed directly to the default branch.

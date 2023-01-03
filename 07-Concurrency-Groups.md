@@ -93,3 +93,7 @@ jobs:
 3. Add & commit your changes, then push to GitHub.
 
 The result will be that one workflow execution (whichever is triggered first) will cancel when the second is queued because they are in the same concurrency group.
+
+## Step 3: Clean Up
+1. Delete the published branch created in [Step 1](#step-1-create-two-workflows-listening-for-the-same-events-with-concurrency-defined)
+2. Switch back to the default branch locally.
