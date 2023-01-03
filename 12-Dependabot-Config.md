@@ -1,4 +1,4 @@
-# Using Actions
+# Dependabot Config
 Within every GitHub repository exists the ability to configure Dependabot. It is a feature that GitHub offers that can remediate out-of-date dependencies by notifying and/or opening pull requests automatically.
 
 To see this in action, we previously used a public action (actions/checkout@v2) which is an older version (see [11-Using-Actions.md](./11-Using-Actions.md) exercise if you haven't completed it) and will enable dependabot for GitHub Actions.
