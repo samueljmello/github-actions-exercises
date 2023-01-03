@@ -8,7 +8,7 @@ In this exercise, you will learn how to use the GitHub package registry for Dock
 - [14-Artifacts](./14-Artifacts.md)
 - [15-Caching](.15-Caching.md)
 
-## Step 1:
+## Step 1: Add the continuous delivery job that creates the package
 1. From the **default** branch of your repository, create a new branch of code called `feature/packages`
 2. Open the file named `.github/workflows/ci-cd.yaml`
 3. Replace the contents of the file with:
@@ -102,4 +102,5 @@ Now you have a fully deployable Docker image, ready to be ran as a container on 
 ## Step 2: Merge the changes to your default branch and update your local repository
 
 1. Click the green `Merge pull request` button on the pull request from step 1.5. This will put your code into the main branch.
-2. Checkout to your default branch locally and pull down the changes.
+2. Delete the published branch created in [Step 1](#step-1).
+3. Checkout to your default branch locally and pull down the changes.
