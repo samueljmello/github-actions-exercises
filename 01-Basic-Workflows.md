@@ -76,3 +76,4 @@ Additionally, you've seen how to run multiple commands in one `run` value using 
 ## Step 4: Clean Up
 1. Delete the PR created in [Step 3](#step-3-open-a-pr-to-merge-your-code)
 2. Delete the published branch created in [Step 1](#step-1-create-a-basic-workflow)
+2. Switch back to the default branch locally.

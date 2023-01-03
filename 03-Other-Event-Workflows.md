@@ -1,10 +1,10 @@
 # Other Event Workflows
-
 In addition to push events, workflows can be triggered off of a variety of other events as well. In the examples below we will see some in action and understand their caveats. One main caveat of many events is that they must be in the default branch to function.
 
 See [event trigger documentation](https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows) for more details information.
 
 ## Step 1: Create an issue-triggered workflow
+We will start by creating a workflow triggered by opening an issue and see first-hand one of the most important details of non-push event workflows.
 
 1. From the **default** branch of your repository, create a new branch of code called `feature/issue-workflow`
 2. Create a new file named `.github/workflows/issue-workflow.yaml`

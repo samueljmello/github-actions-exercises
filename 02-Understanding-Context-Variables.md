@@ -131,4 +131,5 @@ The result will be that the `steps` context now has even more data than the prev
 
 ## Step 5: Clean Up
 
-1. Delete the branch created in [Step 1](#step-1-create-a-new-workflow-to-see-different-contexts)
+1. Delete the published branch created in [Step 1](#step-1-create-a-new-workflow-to-see-different-contexts)
+2. Switch back to the default branch locally.
