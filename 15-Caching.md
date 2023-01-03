@@ -92,7 +92,7 @@ Within the workflow overview, the caches for any given workflow can be seen. You
 ## Step 3: Merge the changes to your default branch and update your local repository
 
 1. Click the green `Merge pull request` button on the pull request from step 1.9. This will put your code into the main branch.
-2. Delete the published branch.
+2. Delete the published branch created in [Step 1](#step-1-add-the-cache-action).
 3. Checkout to your default branch locally and pull down the changes.
 
 ---
