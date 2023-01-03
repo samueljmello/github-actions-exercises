@@ -40,7 +40,7 @@ jobs:
 
 4. Add & commit your changes, then publish your branch.
 5. Go to your repository and open a pull request to merge `feature/deployment` to your **default** branch.
-6. Click the green `Merge pull request` button on the pull request from step 1.5. This will put your code into the main branch.
+6. Click the green `Merge pull request` button on the pull request from step 1.5. This will put your code into the default branch.
 7. Go to the `Actions` tab to see the workflow executions.
 
 The result will be the `Continuous Integration & Delivery` workflow executing. Once that completes, the `Continuous Deployment` workflow will execute automatically. The workflow doesn't do a real deployment and simply runs the container itself, but you would replace those steps with real container orchestration commands.
@@ -101,3 +101,7 @@ The result will be the `Continuous Delivery` workflow fully executing, the same 
 1. Navigate to the `Code` tab on your repository
 2. On the right side, the `Environments` section will now have `production` listed, with it's current status.
 3. Click the `production` environment to see the history.
+
+## Step 5: Clean Up
+2. Delete the published branch created in [Step 1](#step-1-create-the-continuous-deployment-pipeline)
+2. Switch back to the default branch locally.

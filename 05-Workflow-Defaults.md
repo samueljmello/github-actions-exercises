@@ -17,6 +17,9 @@ In this exercise, you will see how to control at both the top-level (for all job
 
 
 ## Step 1: Manually assign shell & working directory to different steps
+We will start by creating a workflow that sets a bunch of `shell` and `working-directory` values on each step, and then later adjust to reduce those values.
+
+_Note: The first step has to create a source directory so that later steps can use it. By default, we aren't cloing the repository, so I manually chose to create a directory (using: `mkdir src`) to demonstrate._
 
 1. From the **default** branch of your repository, create a new branch of code called `feature/defaults`
 2. Create a new file named `.github/workflows/defaults.yaml`
@@ -29,7 +32,7 @@ on:
     branches: feature/defaults
 jobs:
   first-job:
-    name: A Job
+    name: First Job
     runs-on: ubuntu-latest
     steps:
       - name: Create Source Directory
@@ -48,7 +51,7 @@ jobs:
         shell: bash
         working-directory: src
   second-job:
-    name: Another Job
+    name: Second Job
     runs-on: ubuntu-latest
     steps:
       - name: Create Source Directory
@@ -66,6 +69,7 @@ jobs:
 The result will be an execution which utilizes bash for most of the steps within the jobs.
 
 ## Step 2 - Utilizing defaults at the job level
+Now we will see how `jobs` can have `defaults`.
 
 1. Replace the contents of the workflow file from the previous step:
 
@@ -76,7 +80,7 @@ on:
     branches: feature/defaults
 jobs:
   first-job:
-    name: A Job
+    name: First Job
     runs-on: ubuntu-latest
     defaults:
       run:
@@ -94,7 +98,7 @@ jobs:
       - name: Use Bash Also
         run: echo "I'm running bash also. Booo."
   second-job:
-    name: A Job
+    name: Second Job
     runs-on: ubuntu-latest
     steps:
       - name: Create Source Directory
@@ -113,6 +117,7 @@ jobs:
 The result will be less code in your workflow, while the execution still performed the same. It used `bash` as the default `shell` and provided a default working directory of `src`
 
 ## Step 3 - Utilizing defaults at the workflow level
+Finally, we will see how the entire workflow has `defaults`.
 
 1. Follow the same process as step 2, but use this content:
 
@@ -127,7 +132,7 @@ defaults:
     working-directory: src
 jobs:
   first-job:
-    name: A Job
+    name: First Job
     runs-on: ubuntu-latest
     steps:
       - name: Create Source Directory
@@ -141,7 +146,7 @@ jobs:
       - name: Use Bash Also
         run: echo "I'm running bash also. Booo."
   second-job:
-    name: A Job
+    name: Second Job
     runs-on: ubuntu-latest
     steps:
       - name: Create Source Directory
@@ -152,3 +157,8 @@ jobs:
 ```
 
 The result will be even less code, making `bash` the default `shell` and `src` the `working-directory` for all job steps.
+
+## Step 4 - Clean Up
+
+1. Delete the published branch created in [Step 1](#step-1-manually-assign-shell--working-directory-to-different-steps)
+2. Switch back to the default branch locally.

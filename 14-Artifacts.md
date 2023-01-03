@@ -7,6 +7,8 @@ The exercise below will walk you through updating the previously created `Contin
 - [13-Continuous-Integration](./13-Continuous-Integration.md)
 
 ## Step 1: Add the artifact save action
+By adding the public action `actions/upload-artifact` to our `Continuous Integration` workflow, we have an easy-to-use way of working with the Artifacts API.
+
 1. From the **default** branch of your repository, create a new branch of code called `feature/artifacts`
 2. Open the file named `.github/workflows/ci-cd.yaml`
 3. Replace the contents of the file with:
@@ -66,4 +68,5 @@ It should be noted that artifact retention is only as long [configured](https://
 ## Step 2: Merge the changes to your default branch and update your local repository
 
 1. Click the green `Merge pull request` button on the pull request from step 1.6. This will put your code into the main branch.
-2. Checkout to your default branch locally and pull down the changes.
+2. Delete the published branch created in [Step 1](#step-1-add-the-artifact-save-action)
+3. Checkout to your default branch locally and pull down the changes.

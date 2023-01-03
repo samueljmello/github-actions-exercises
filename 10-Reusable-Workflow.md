@@ -83,6 +83,9 @@ jobs:
 
 The result will be an execution of the workflow `Manual & Shared Workflow`, that will output the values passed to it from the `with` option.
 
+## Step 3: Clean Up
+No further steps are needed as you committed directly to the default branch.
+
 ## Notes
 - When using a shared workflow from a **public** or **internal** repository, the syntax will be slightly different:
 `<owner>/<repo>/<path-to-workflow>@<release-tag>`

@@ -71,17 +71,29 @@ jobs:
 8. Go to your repository, and view the Pull Requests tab.
 9. Create a pull request to merge `feature/cache` into your **default** branch.
 
-In the steps above, you added several steps to the workflow file. These steps help to define the Go paths for caching, and then pass those paths to the `actions/cache` action that handles the downloading & updating of caches.
+In the steps above, you added several steps to the workflow file. These steps help to define the Go paths for caching, and then pass those paths to the `actions/cache` action that handles the downloading & updating of caches. You will now see two additional steps (`Cache` and `Post Cache`)
+
+![A picture of the button](images/15-cache-steps.png)
 
 No additional step is required to save your cache, because the action has post-execution hooks that handle it for you.
 
 The result won't be a lot of time saved because the number of dependencies are very few, but in a real-world scenario this could save a lot, reducing dependency downloads from the 10's of minutes to just a few seconds.
 
+## Step 2: View The "Caches" Area On The Workflow
+Within the workflow overview, the caches for any given workflow can be seen. You will need to have a successful execution first, but afterwards the view will be available.
 
-## Step 2: Merge the changes to your default branch and update your local repository
+1. Go to the `Actions` tab on your repository.
+2. Click the `Continuous Integration & Delivery` workflow on the left.
+3. Finally, click the `Caches` link from the left hand navigation. You can also do this from the top (no need to drill in to `Actions`) to see all caches across a repository.
+
+![A picture of the button](images/15-cache-view.png)
+
+
+## Step 3: Merge the changes to your default branch and update your local repository
 
 1. Click the green `Merge pull request` button on the pull request from step 1.9. This will put your code into the main branch.
-2. Checkout to your default branch locally and pull down the changes.
+2. Delete the published branch created in [Step 1](#step-1-add-the-cache-action).
+3. Checkout to your default branch locally and pull down the changes.
 
 ---
 
