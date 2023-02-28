@@ -139,7 +139,7 @@ jobs:
         run: mkdir src
         working-directory: .
       - name: Use Python
-        run: import os; print("I'm running python! Hissssss! " + ow.getcwd())
+        run: import os; print("I'm running python! Hissssss! " + os.getcwd())
         shell: python
       - name: Use Bash
         run: echo "I'm running hum-drum bash in $(pwd). Booo."
