@@ -39,17 +39,16 @@ jobs:
         run: mkdir src
         shell: bash
       - name: Use Python
-        run: print("I'm running python! Hissssss!")
+        run: import os; print("I'm running python! Hissssss! " + os.getcwd());
         shell: python
         working-directory: src
       - name: Use Bash
-        run: echo "I'm running hum-drum bash. Booo."
+        run: echo "I'm running hum-drum bash in $(pwd). Booo."
         shell: bash
         working-directory: src
       - name: Use Bash Also
-        run: echo "I'm running bash also. Booo."
+        run: echo "I'm running bash also, but elsewhere in $(pwd). Booo."
         shell: bash
-        working-directory: src
   second-job:
     name: Second Job
     runs-on: ubuntu-latest
@@ -58,7 +57,7 @@ jobs:
         run: mkdir src
         shell: bash
       - name: Use Bash
-        run: echo "I'm running bash. So sad."
+        run: echo "I'm running bash in $(pwd). So sad."
         shell: bash
         working-directory: src
 ```
@@ -91,12 +90,13 @@ jobs:
         run: mkdir src
         working-directory: .
       - name: Use Python
-        run: print("I'm running python! Hissssss!")
+        run: import os; print("I'm running python! Hissssss! " + os.getcwd())
         shell: python
       - name: Use Bash
-        run: echo "I'm running hum-drum bash. Booo."
+        run: echo "I'm running hum-drum bash in $(pwd). Booo."
       - name: Use Bash Also
-        run: echo "I'm running bash also. Booo."
+        run: echo "I'm running bash also, but elsewhere in $(pwd). Booo."
+        working-directory: ..
   second-job:
     name: Second Job
     runs-on: ubuntu-latest
@@ -106,7 +106,7 @@ jobs:
         shell: bash
         working-directory: .
       - name: Use Bash
-        run: echo "I'm running bash. So sad."
+        run: echo "I'm running bash in $(pwd). So sad."
         shell: bash
         working-directory: src
 ```
@@ -139,12 +139,13 @@ jobs:
         run: mkdir src
         working-directory: .
       - name: Use Python
-        run: print("I'm running python! Hissssss!")
+        run: import os; print("I'm running python! Hissssss! " + ow.getcwd())
         shell: python
       - name: Use Bash
-        run: echo "I'm running hum-drum bash. Booo."
+        run: echo "I'm running hum-drum bash in $(pwd). Booo."
       - name: Use Bash Also
-        run: echo "I'm running bash also. Booo."
+        run: echo "I'm running bash also, but elsewhere in $(pwd). Booo."
+        working-directory: ..
   second-job:
     name: Second Job
     runs-on: ubuntu-latest
@@ -153,7 +154,7 @@ jobs:
         run: mkdir src
         working-directory: .
       - name: Use Bash
-        run: echo "I'm running bash. So sad."
+        run: echo "I'm running bash in $(pwd). So sad."
 ```
 
 The result will be even less code, making `bash` the default `shell` and `src` the `working-directory` for all job steps.
