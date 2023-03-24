@@ -36,8 +36,8 @@ jobs:
         id: go-paths
         working-directory: ${{github.workspace}}
         run: |
-          echo "::set-output name=gomodcache::$(go env GOMODCACHE)"
-          echo "::set-output name=gocache::$(go env GOCACHE)"
+          echo "gomodcache=$(go env GOMODCACHE)" >> $GITHUB_OUTPUT
+          echo "gocache=$(go env GOCACHE)" >> $GITHUB_OUTPUT
       - name: Clone
         uses: actions/checkout@v3.1.0
       - name: Cache
