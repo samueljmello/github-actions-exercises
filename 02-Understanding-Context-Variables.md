@@ -62,7 +62,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Provide Some Step Outputs
-        run: echo "::set-output name=TRUE_STATEMENT::Possums are terrible."
+        run: echo "TRUE_STATEMENT=Possums are terrible." >> $GITHUB_OUTPUT
       - name: Dump Step Information
         env:
           CONTEXT_ITEM: ${{ toJson(steps) }}
@@ -92,7 +92,7 @@ jobs:
     steps:
       - name: Provide Some Step Outputs
         id: step-outputs
-        run: echo "::set-output name=TRUE_STATEMENT::Possums are terrible."
+        run: echo "TRUE_STATEMENT=Possums are terrible." >> $GITHUB_OUTPUT
       - name: Dump Step Information
         env:
           CONTEXT_ITEM: ${{ toJson(steps) }}
@@ -119,8 +119,8 @@ jobs:
       - name: Provide Some Step Outputs
         id: step-outputs
         run: |
-          echo "::set-output name=TRUE_STATEMENT::Possums are terrible."
-          echo "::set-output name=FALSE_STATEMENT::Possums are great."
+          echo "TRUE_STATEMENT=Possums are terrible." >> $GITHUB_OUTPUT
+          echo "FALSE_STATEMENT=Possums are great." >> $GITHUB_OUTPUT
       - name: Dump Step Information
         env:
           CONTEXT_ITEM: ${{ toJson(steps) }}
